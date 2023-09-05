@@ -1,0 +1,81 @@
+/* work font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Montserrat:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@500;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* navbar section styles */
+header {
+    padding: 50px 100px;
+    background: #fff;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.nav-box {
+    padding-right: 35px;
+}
+.text{
+    color: #3C354F;
+    text-align: center;
+}
+
+.nav-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.pink-logo{
+    padding-right: 20px;
+}
+.pink-g {
+    color: #FF42A5;
+}
+.follow-us-on{
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    width: 250px;
+    height: 25px;
+}
+/* responsive styles for small device */
+@media screen and (max-width: 576px) {
+    nav,
+    .navbar-right{
+        flex-direction: column;
+    }
+    .pink-logo{
+        width: 30%;
+        padding-right: 0px;
+    }
+    .nav-title{
+        font-size: 2rem;
+    }
+}
