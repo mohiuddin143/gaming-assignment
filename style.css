@@ -300,9 +300,11 @@ svg {
     bottom: -150px;
     left: -800px;
 }
-.horse-right{
+
+.horse-right {
     margin-bottom: 200px;
 }
+
 /* horse section end */
 /* games section start */
 .game {
@@ -320,56 +322,122 @@ svg {
     font-size: 20px;
     font-weight: 600;
 }
-.game-1, .game-2, .game-3, .game-4, .game-5, .game-6, .game-7, .game-8, .game-9{
+
+.game-1,
+.game-2,
+.game-3,
+.game-4,
+.game-5,
+.game-6,
+.game-7,
+.game-8,
+.game-9 {
     padding: 5px;
 }
-.game-1{
+
+.game-1 {
     grid-area: game-1;
 }
-.game-2{
+
+.game-2 {
     grid-area: game-2;
 }
-.game-3{
+
+.game-3 {
     grid-area: game-3;
 }
-.game-4{
+
+.game-4 {
     grid-area: game-4;
 }
-.game-5{
+
+.game-5 {
     grid-area: game-5;
 }
-.game-6{
+
+.game-6 {
     grid-area: game-6;
 }
-.game-7{
+
+.game-7 {
     grid-area: game-7;
 }
-.game-7{
+
+.game-7 {
     grid-area: game-7;
 }
-.game-8{
+
+.game-8 {
     grid-area: game-8;
 }
-.game-9{
+
+.game-9 {
     grid-area: game-9;
 }
+
 .games-section {
     display: grid;
     grid-template-areas:
-    "game-1 game-2 game-3 game-4 game-5"
-    "game-6 game-7 game-8 game-9 game-9";
+        "game-1 game-2 game-3 game-4 game-5"
+        "game-6 game-7 game-8 game-9 game-9";
     gap: 20px;
-    margin-top: 100px ;
+    margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
 }
-.game:hover{
+
+.game:hover {
     border: 1.5px solid #FF42A5;
 }
-.game:hover .game-info{
+
+.game:hover .game-info {
     color: #FF42A5;
 }
+
 /* games section end */
+/* footer start */
+footer {
+    background: #0B0223;
+    padding: 120px 550px;
+}
+
+.footer-title,
+.web-info,
+.socila-media-logos,
+.privacy {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.web-info {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: space-around;
+}
+
+.socila-media-logos {
+    color: white;
+    justify-content: space-around;
+}
+
+.privacy-info, .copy-right {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.privacy{
+    justify-content: space-around;
+}
+.footer-heading{
+    color: #FFF;
+}
+.footer-title{
+    justify-content: center;
+}
+/* footer end */
 /* responsive styles for small device */
 @media screen and (max-width: 576px) {
     nav {
