@@ -85,9 +85,12 @@ li a {
     padding: 150px 200px;
     width: 901px;
 }
-.banner-left  i, svg{
+
+.banner-left i,
+svg {
     padding-right: 10px;
 }
+
 .black-title {
     color: #0B0223;
     text-align: center;
@@ -147,85 +150,139 @@ li a {
     border-radius: 48px;
     background: #4EC5F7;
 }
-.banner-img{
+
+.banner-img {
     width: calc(95%-901px);
+}
+
+/* videos section styles start */
+.videos-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+#pink-videos {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.videos-info {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 50px;
 }
 
 /* responsive styles for small device */
 @media screen and (max-width: 576px) {
-    nav{
+    nav {
         width: 95vw;
     }
+
     nav,
     .navbar-right {
         flex-direction: column;
     }
-    .navbar-left{
+
+    .navbar-left {
         padding-bottom: 60px;
     }
-    .about-us{
+
+    .about-us {
         padding-bottom: 30px;
     }
-    .nav-dev{
+
+    .nav-dev {
         padding-bottom: 70px;
     }
+
     .pink-logo {
         width: 30%;
         padding-right: 0px;
     }
+
     .nav-title {
         font-size: 2rem;
     }
-    .banner-section{
+
+    .banner-section {
         flex-direction: column-reverse;
         width: 95vw;
         margin-top: 80px;
     }
-    .banner-left{
+
+    .banner-left {
         background: url("images/Group\ 14.png");
         justify-content: center;
         align-items: center;
         width: 80vw;
     }
-    .bold-title{
+
+    .bold-title {
         font-size: 5rem;
     }
-    .banner-info{
+
+    .banner-info {
         font-size: 1rem;
     }
-    .banner-right{
+
+    .banner-right {
         margin-bottom: 100px;
     }
-    .banner-img{
+
+    .banner-img {
         width: 100%;
     }
-    .sign-in{
+
+    .sign-in {
         margin-bottom: 20px;
     }
+    .videos-title{
+        font-size: 1.8rem;
+    }
+    .videos-info{
+        font-size: 14px;
+    }
 }
+
 /* medium device */
 @media screen and (min-width: 577px) and (max-width: 960px) {
+
     nav,
     .navbar-right {
         flex-direction: column;
     }
-    .navbar-left{
+
+    .navbar-left {
         padding-bottom: 60px;
     }
-    .about-us{
+
+    .about-us {
         padding-bottom: 30px;
     }
-    .nav-dev{
+
+    .nav-dev {
         padding-bottom: 70px;
     }
-    .banner-section{
+
+    .banner-section {
         flex-direction: column-reverse;
         width: 95vw;
     }
-    .banner-img{
+
+    .banner-img {
         width: 100%;
     }
-    .banner-left{
+
+    .banner-left {
         background: url("images/Group\ 14.png");
         width: 80vw;
     }
