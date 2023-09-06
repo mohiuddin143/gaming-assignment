@@ -205,22 +205,16 @@ svg {
     line-height: 30px;
 }
 
-
-/* Container for the image and overlay */
 .image-container {
     position: relative;
     display: inline-block;
     overflow: hidden;
 }
 
-/* Image styles */
 .image-container img {
     max-width: 100%;
-    /* height: auto; 
-    /* transition: filter 0.3s ease; */
 }
 
-/* Overlay styles */
 .image-overlay {
     position: relative;
     width: 100%;
@@ -244,32 +238,30 @@ svg {
     text-align: center;
 }
 
-/* Play button styles */
 .play-button {
     width: 50px;
     height: 50px;
-    /* background: url() no-repeat center; */
     background-size: contain;
     margin-bottom: 10px;
 }
 
-/* Text styles */
 .image-text {
     color: #FF42A5;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-/* Hover state styles */
-.image-container:hover img{
-    filter: brightness(0.5); /* Darken the image */
+.image-container:hover img {
+    filter: brightness(0.5);
 }
-.image-container:hover{
+
+.image-container:hover {
     border-radius: 16px;
     border: 4px solid #FF42A5;
 }
+
 .image-container:hover .overlay-content {
-    opacity: 1; /*Show the overlay with full opacity on hover*/
+    opacity: 1;
 }
 
 /* responsive styles for small device */
