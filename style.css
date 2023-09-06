@@ -182,16 +182,19 @@ svg {
 }
 
 /* videos card div */
-.videos-card-container{
+.videos-card-container {
     display: flex;
     justify-content: space-around;
 }
+
+.card {
+    padding-bottom: 25px;
+}
+
 .card-img {
     width: 342px;
     height: 400px;
-    flex-shrink: 0;
     border-radius: 16px;
-    padding-bottom: 25px;
 }
 
 .card-info {
@@ -201,6 +204,7 @@ svg {
     font-weight: 500;
     line-height: 30px;
 }
+
 
 /* responsive styles for small device */
 @media screen and (max-width: 576px) {
@@ -274,6 +278,17 @@ svg {
     .videos-info {
         font-size: 14px;
     }
+
+    .videos-card-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+    }
 }
 
 /* medium device */
@@ -308,5 +323,12 @@ svg {
     .banner-left {
         background: url("images/Group\ 14.png");
         width: 80vw;
+    }
+
+    .videos-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
