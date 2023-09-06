@@ -16,6 +16,7 @@ header {
     padding: 50px 100px;
     background: #fff;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -41,9 +42,10 @@ li a {
 }
 
 .nav-box {
-    padding-right: 35px;
+    padding-right: 25px;
 }
-.text{
+
+.text {
     color: #3C354F;
     text-align: center;
 }
@@ -52,30 +54,179 @@ li a {
     font-size: 3rem;
     font-weight: 700;
 }
-.pink-logo{
+
+.pink-logo {
     padding-right: 20px;
 }
+
 .pink-g {
     color: #FF42A5;
 }
-.follow-us-on{
-    padding: 20px;
+
+.follow-us-on {
+    padding: 15px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     width: 250px;
     height: 25px;
 }
+
+/* banner section styles */
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    background: url("images/Group\ 14.png"), left;
+}
+
+.banner-left {
+    align-items: center;
+    padding: 150px 200px;
+    width: 901px;
+}
+.banner-left  i, svg{
+    padding-right: 10px;
+}
+.black-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.bold-title {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
+}
+
+.banner-info {
+    color: #534C64;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    padding-bottom: 15px;
+}
+
+.banner-btn {
+    padding-top: 40px;
+}
+
+.sign-in {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border: none;
+    border-radius: 48px;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+}
+
+.go-rogue {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border: none;
+    border-radius: 48px;
+    background: #4EC5F7;
+}
+.banner-img{
+    width: calc(95%-901px);
+}
+
 /* responsive styles for small device */
 @media screen and (max-width: 576px) {
+    nav{
+        width: 95vw;
+    }
     nav,
-    .navbar-right{
+    .navbar-right {
         flex-direction: column;
     }
-    .pink-logo{
+    .navbar-left{
+        padding-bottom: 60px;
+    }
+    .about-us{
+        padding-bottom: 30px;
+    }
+    .nav-dev{
+        padding-bottom: 70px;
+    }
+    .pink-logo {
         width: 30%;
         padding-right: 0px;
     }
-    .nav-title{
+    .nav-title {
         font-size: 2rem;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        width: 95vw;
+        margin-top: 80px;
+    }
+    .banner-left{
+        background: url("images/Group\ 14.png");
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+    }
+    .bold-title{
+        font-size: 5rem;
+    }
+    .banner-info{
+        font-size: 1rem;
+    }
+    .banner-right{
+        margin-bottom: 100px;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .sign-in{
+        margin-bottom: 20px;
+    }
+}
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    nav,
+    .navbar-right {
+        flex-direction: column;
+    }
+    .navbar-left{
+        padding-bottom: 60px;
+    }
+    .about-us{
+        padding-bottom: 30px;
+    }
+    .nav-dev{
+        padding-bottom: 70px;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        width: 95vw;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .banner-left{
+        background: url("images/Group\ 14.png");
+        width: 80vw;
     }
 }
