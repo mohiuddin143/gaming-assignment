@@ -264,6 +264,40 @@ svg {
     opacity: 1;
 }
 
+/* horse section start */
+.horse-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+.horse-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    color: #0B0223;
+}
+.horse-info{
+    text-align: justify;
+    width: 353px;
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.cat{
+    width: 318px;
+    height: 365px;
+    border: 10px solid #FFF;
+    border-radius: 8px;
+    position: relative;
+    bottom: -150px;
+    left: -800px;
+}
+/* horse section end */
 /* responsive styles for small device */
 @media screen and (max-width: 576px) {
     nav {
